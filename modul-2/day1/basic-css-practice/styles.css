@@ -1,0 +1,99 @@
+/* Global Style */
+/* untuk pemanggilan element, tidak perlu dot . */
+/* untuk pemanggilan class, perlu dot . */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div {
+    margin-bottom: 40px;
+}
+
+/* ==== Color ==== */
+
+.text-red {
+    color: red;
+}
+
+.text-blue {
+    color: blue;
+}
+
+.text-green {
+    color: green;
+}
+
+/* ==== BackgroundColor ==== */
+
+.back-yellow {
+    background-color: yellow;
+    padding:10px;
+}
+
+.back-gray {
+    background-color: gray;
+    padding:10px;
+}
+
+.back-lightblue {
+    background-color: lightblue;
+    padding:10px;
+}
+
+/* ==== BackgroundImage ==== */
+.back-image-1 {
+    background-image: url("https://i.pinimg.com/736x/6f/9e/2c/6f9e2cc06c9d1f85761d61a7ad50e7b0.jpg");
+    height: 500px;
+    margin-bottom: 10px;
+    background-repeat: round;
+}
+
+.back-image-2 {
+    background-image: url("https://i.pinimg.com/736x/6f/9e/2c/6f9e2cc06c9d1f85761d61a7ad50e7b0.jpg");
+    height: 500px;
+    margin-bottom: 10px;
+    background-size: cover;
+}
+
+.back-image-3 {
+    background-image: url("https://i.pinimg.com/736x/6f/9e/2c/6f9e2cc06c9d1f85761d61a7ad50e7b0.jpg");
+    height: 500px;
+    margin-bottom: 10px;
+    background-repeat: repeat;
+}
+
+.box-small {
+    width: 100px;
+    height: 50px;
+    background-color: lightcoral;
+    color: white;
+    text-align: center;
+}
+
+.box-medium {
+    width: 200px;
+    height: 80px;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+.box-large {
+    width: 300px;
+    height: 120px;
+    background-color: lightskyblue;
+    text-align: center;
+}
+
+.unit-fixed {
+    padding:10px;
+    width: 500px;
+    background-color: orange;
+}
+
+.unit-percent {
+    padding:10px;
+    width: 50%;
+    background-color: green;
+    color: white
+}

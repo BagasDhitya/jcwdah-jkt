@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 - Frontend Development</title>
+</head>
+
+<body>
+    <!-- Main heading of the page-->
+    <h1>Frontend Development Basics</h1>
+
+    <!-- Subheadings -->
+    <h2>HTML Headings</h2>
+    <h3>Headling Level 3</h3>
+    <h4>Heading Level 4</h4>
+    <h5>Heading Level 5</h5>
+    <h6>Heading Level 6</h6>
+
+    <!-- Paragraph section -->
+    <h2>Paragraph and Line Break</h2>
+    <p>This paragraph demonstrates the use of a line break tag. <br>
+        The text after this sentence appears on a new line because of the
+        <code>&lt;br&gt;</code> tag
+    </p>
+
+    <!-- Comment tag explanation -->
+    <!-- This is an HTML comment. Comments are not displayed in the browser. 
+     They are useful for documentations or notes -->
+
+    <!-- HTML Text Formatting -->
+    <h1>HTML Text Formatting</h1>
+
+    <h2>1. Bold Text</h2>
+    <p><b>b tag</b> makes text visually bold, but it does not add importance.</p>
+
+    <h2>2. Italic Text</h2>
+    <p><i>i tag</i> makes text italic.</p>
+
+    <h2>3. Underlined Text</h2>
+    <p><u>u tag</u> underlines text, often used to highlight or mark text.</p>
+
+    <h2>4. Highlighted Text</h2>
+    <p><mark>mark tag</mark> highlights text to draw attention.</p>
+
+    <!-- Unordered List -->
+    <h2>Unordered List Tag</h2>
+    <ul style="list-style-type: disc;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+    </ul>
+
+    <ul style="list-style-type: square;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+    </ul>
+
+    <ul style="list-style-type: none;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+    </ul>
+
+    <ul style="list-style-type: circle;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <h2>Ordered List Tag</h2>
+
+    <ol type="A">
+        <li>Design</li>
+        <li>Development</li>
+        <li>Testing</li>
+        <li>Deployment</li>
+    </ol>
+
+    <ol type="a">
+        <li>Design</li>
+        <li>Development</li>
+        <li>Testing</li>
+        <li>Deployment</li>
+    </ol>
+
+    <ol type="I">
+        <li>Design</li>
+        <li>Development</li>
+        <li>Testing</li>
+        <li>Deployment</li>
+    </ol>
+
+    <ol type="i">
+        <li>Design</li>
+        <li>Development</li>
+        <li>Testing</li>
+        <li>Deployment</li>
+    </ol>
+
+    <ol type="1">
+        <li>Design</li>
+        <li>Development</li>
+        <li>Testing</li>
+        <li>Deployment</li>
+    </ol>
+
+    <!-- HTML Table Structure -->
+    <h2>Basic Table Structure</h2>
+
+    <table border="1">
+        <tr>
+            <th>No</th>
+            <th>Technology</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>HTML</td>
+            <td>Defines the structure of website pages.</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>CSS</td>
+            <td>Styles and layouts website content.</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>JavaScript</td>
+            <td>Adds interactivity to websites.</td>
+        </tr>
+    </table>
+
+    <!-- Column span : menggabungkan kolom -->
+    <!-- Rows span : menggabungkan baris -->
+
+    <h2>Table with Colspan and Rowspan</h2>
+    <table border="1">
+        <tr>
+            <th>Time</th>
+            <th>Activity</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td rowspan="2">09:00 - 10:30</td>
+            <td>Lecture</td>
+            <td>HTML & CSS</td>
+        </tr>
+        <tr>
+            <td>Practice</td>
+            <td>Hands-on session</td>
+        </tr>
+        <tr>
+            <td>10:30 - 11:00</td>
+            <td colspan="2">Break</td>
+        </tr>
+    </table>
+
+    <!-- Anchor, Image, and Figure Captions -->
+    <h2>1. Anchor Tag (a)</h2>
+    <p>Visit <a href="https://purwadhika.com" target="_blank">
+            Purwadhika</a> to learn more about Software Development</p>
+
+    <h2>2. Image Tag (img)</h2>
+    <img src="https://i.pinimg.com/736x/21/f9/b1/21f9b15d71cf787cf10823cf2c499f53.jpg" alt="Cute kitty">
+
+    <h2>3. Figure and Caption Tag (figure & figcaption)</h2>
+    <figure>
+        <img src="https://i.pinimg.com/1200x/98/3f/89/983f8958b248f5ac70f9ee652bd3f953.jpg" alt="Iron man figure">
+        <figcaption>
+            <strong>Tony Stark</strong> sporting the Mark nanotech suit.
+            First introduced in <em>Avengers: End Game</em>, this armor represents the pinnacle of
+            Stark Industries Engineering
+        </figcaption>
+    </figure>
+
+    <!-- Input variants -->
+    <form>
+        <h3>Text Input</h3>
+        <p>Used to collect short text such as names or titles.</p>
+        <input type="text" placeholder="Enter your name ...">
+
+        <h3>Email Input</h3>
+        <p>Used to collect email addresses.</p>
+        <input type="email" placeholder="Enter your email">
+
+        <h3>Password Input</h3>
+        <p>Used to collect sensitive information.</p>
+        <input type="password" placeholder="Enter your password">
+
+        <h3>Date Input</h3>
+        <p>Used to select the date</p>
+        <input type="date">
+
+        <h3>Checkbox Input</h3>
+        <p>Used to select one or more options</p>
+        <label>
+            <input type="checkbox"> I agree to the terms and conditions.
+        </label>
+    </form>
+</body>
+
+</html>
