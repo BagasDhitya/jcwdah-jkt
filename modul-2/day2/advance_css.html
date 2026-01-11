@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./advance_css.css">
+    <title>Advanced CSS</title>
+</head>
+
+<body>
+    <section class="container-position">
+        <div class="box static">
+            <h3>Static (Default)</h3>
+            <p>This element follows the normal document flow.</p>
+        </div>
+        <div class="box relative">
+            <h3>Relative</h3>
+            <p>This element is moved relative to its original position.</p>
+        </div>
+        <div class="box parent">
+            <h3>Parent (Relative)</h3>
+            <p>This box is the reference for the absolute element</p>
+            <div class="box absolute">
+                <h3>Absolute</h3>
+                <p>Positioned relative to its parent</p>
+            </div>
+        </div>
+        <div class="box sticky">
+            <h3>Sticky</h3>
+            <p>This element sticks when you scroll</p>
+        </div>
+        <div class="spacer"></div>
+    </section>
+
+    <div class="box fixed">
+        Fixed
+    </div>
+
+    <section class="responsive-section">
+        <h2>Responsive Design with Media Queries</h2>
+        <div class="device-grid">
+            <!-- LAPTOP VIEW -->
+            <div class="device-card">
+                <h3>Laptop View</h3>
+                <p>
+                    This layout is optimized for large screen with more spacing and
+                    multi-column layout.
+                </p>
+            </div>
+
+            <!-- TABLET VIEW -->
+            <div class="device-card">
+                <h3>Tablet View</h3>
+                <p>
+                    On tablets, the layout becomes more compact and adjusts spacing.
+                </p>
+            </div>
+
+            <!-- SMARTPHONE VIEW -->
+            <div class="device-card">
+                <h3>Smartphone View</h3>
+                <p>
+                    On smartphones, content is stacked vertically for better readability.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="grid-section">
+        <h2>CSS Grid Layout</h2>
+        <div class="grid-demo">
+            <div class="grid-item">Item 1</div>
+            <div class="grid-item">Item 2</div>
+            <div class="grid-item">Item 3</div>
+            <div class="grid-item">Item 4</div>
+            <div class="grid-item">Item 5</div>
+            <div class="grid-item">Item 6</div>
+        </div>
+    </section>
+
+    <section class="flex-section">
+        <h2>CSS Flexbox Layout</h2>
+        <div class="flex-container row">
+            <div class="flex-item">Row 1</div>
+            <div class="flex-item">Row 2</div>
+            <div class="flex-item">Row 3</div>
+        </div>
+        <div class="flex-container column">
+            <div class="flex-item">Column 1</div>
+            <div class="flex-item">Column 2</div>
+            <div class="flex-item">Column 3</div>
+        </div>
+        <h3>Flex Wrap</h3>
+        <div class="flex-container wrap">
+            <div class="flex-item wide">Item</div>
+            <div class="flex-item wide">Item</div>
+            <div class="flex-item wide">Item</div>
+            <div class="flex-item wide">Item</div>
+            <div class="flex-item wide">Item</div>
+            <div class="flex-item wide">Item</div>
+            <div class="flex-item wide">Item</div>
+            <div class="flex-item wide">Item</div>
+            <div class="flex-item wide">Item</div>
+            <div class="flex-item wide">Item</div>
+        </div>
+        <h3>Flex Shrink</h3>
+        <div class="flex-container shrink-demo">
+            <div class="flex-item shrink-0">No Shrink</div>
+            <div class="flex-item shrink-1">Shrink</div>
+            <div class="flex-item shrink-1">Shrink</div>
+        </div>
+    </section>
+
+    <section class="animation-section">
+        <h2>CSS Animation & Transform</h2>
+        <div class="animation-grid">
+            <div class="animation-box translate">
+                2D Translate
+            </div>
+            <div class="animation-box rotate">
+                2D Rotate
+            </div>
+            <div class="animation-box translate-3d">
+                3D TranslateX
+            </div>
+            <div class="keyframe-box fade">
+                Fade In
+            </div>
+            <div class="keyframe-box pulse">
+                Pulse
+            </div>
+        </div>
+    </section>
+
+    <section class="gradient-section">
+        <h2>CSS Gradients</h2>
+        <div class="gradient-box linear">
+            Linear Gradient
+        </div>
+        <div class="gradient-box radial">
+            Radial Gradient
+        </div>
+        <div class="gradient-box conic">
+            Conic Gradient
+        </div>
+    </section>
+</body>
+
+</html>
