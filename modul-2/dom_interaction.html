@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Interaction</title>
+</head>
+<style>
+    #box {
+        width: 150px;
+        height: 80px;
+        background-color: lightblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8px;
+    }
+</style>
+
+<body>
+    <section>
+        <p id="text">Text will be changed</p>
+        <button onclick="changeText()">Change Text</button>
+    </section>
+    <section>
+        <div id="box">Color Box</div>
+        <button onclick="changeColor()">Change Color</button>
+    </section>
+    <section>
+        <p id="hideMe">Now you see me</p>
+        <button onclick="hide()">Hide me</button>
+    </section>
+</body>
+<script>
+    function hide() {
+        document.getElementById("hideMe").style.display = "none"
+    }
+    function changeText() {
+        document.getElementById("text").innerText = "Text successfully changed"
+    }
+    function changeColor() {
+        document.getElementById("box").style.backgroundColor = "tomato"
+    }
+</script>
+
+</html>
