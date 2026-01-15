@@ -14,7 +14,9 @@ export default function HeroCard({ image, title, description }: HeroCardProps) {
                 <img
                     src={image}
                     alt={title}
-                    className="h-full object-cover"
+                    width={100}
+                    height={100}
+                    className="object-cover"
                 />
             </div>
             <CardContent className="p-5 space-y-2">
