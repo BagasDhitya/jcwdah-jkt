@@ -1,4 +1,6 @@
 import TailwindButton from "../../components/TailwindButton";
+import HeroCard from "@/components/HeroCard";
+import data from "@/data/hero.json"
 
 export default function ShowCase() {
     return (
@@ -106,6 +108,22 @@ export default function ShowCase() {
                         mode="blue"
                         onClick={() => alert("Blue button clicked")}
                     />
+                </div>
+            </section>
+
+            {/* HERO CARD */}
+            <section>
+                <h2 className="text-2xl font-bold mb-4">Hero Card</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                    {data?.map((info) => {
+                        return (
+                            <HeroCard
+                                image={info.image}
+                                title={info.title}
+                                description={info.description}
+                            />
+                        )
+                    })}
                 </div>
             </section>
         </div>
