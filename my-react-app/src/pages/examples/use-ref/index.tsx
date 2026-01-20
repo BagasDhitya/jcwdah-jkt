@@ -7,7 +7,7 @@ export default function UseRefExamples() {
     const [triggerRef, setTriggerRef] = useState<boolean>(false)
 
     console.log("counter from use ref : ", renderCountRef.current)
-    // console.log("counter from use state : ", stateCounter)
+    console.log("counter from use state : ", stateCounter)
 
     return (
         <div className="min-h-screen transition-colors duration-300 bg-gray-100 text-gray-900" >
