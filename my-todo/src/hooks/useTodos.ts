@@ -2,13 +2,13 @@ import { useMemo, useState } from "react";
 import type { Todo } from "../types/todo";
 
 export function useTodos() {
-  const [todos, setTodos] = useState<Todo[]>();
+  const [todos, setTodos] = useState<Todo[]>([]);
   const [search, setSearch] = useState<string>("");
   const [category, setCategory] = useState<string>("all");
   const [sort, setSort] = useState<"asc" | "desc">("asc");
 
   function addTodo(data: Omit<Todo, "id" | "createdAt">) {
-    setTodos((prev: any) => [
+    setTodos((prev) => [
       ...prev,
       {
         ...data,
@@ -19,7 +19,7 @@ export function useTodos() {
   }
 
   function updateTodo(id: string, updated: Partial<Todo>) {
-    setTodos((prev: any) =>
+    setTodos((prev) =>
       prev.map((todo: Todo) =>
         todo.id === id ? { ...todo, ...updated } : todo,
       ),
@@ -27,7 +27,7 @@ export function useTodos() {
   }
 
   function deleteTodo(id: string) {
-    setTodos((prev: any) => prev.filter((todo: Todo) => todo.id !== id));
+    setTodos((prev) => prev.filter((todo: Todo) => todo.id !== id));
   }
 
   const filteredTodos = useMemo(() => {
