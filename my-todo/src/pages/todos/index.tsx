@@ -28,7 +28,7 @@ export default function Todos() {
         setTitle("")
         setDescription("")
         setTodoCategory("")
-    }
+    }2
 
     return (
         <div className="w-screen h-svh flex justify-center items-center">
