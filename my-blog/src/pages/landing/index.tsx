@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 
 export default function Landing() {
+    
+    const navigate = useNavigate()
     const features = [
         {
             title: 'Entertainment',
@@ -57,7 +60,9 @@ export default function Landing() {
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
                 >
-                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition-all">
+                    <button
+                        onClick={() => navigate("/blogs")}
+                        className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition-all">
                         Explore Now
                     </button>
                 </motion.div>

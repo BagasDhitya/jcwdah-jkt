@@ -15,7 +15,6 @@ export function useBlogs() {
   const [error, setError] = useState<string | null>(null);
 
   // GET : ambil data dari blogs
-
   async function fetchBlogs() {
     setLoading(true);
     try {
@@ -29,9 +28,20 @@ export function useBlogs() {
     }
   }
 
+  // POST : bikin konten baru
+  async function createBlog(data: Blog) {
+    try {
+      const response = await axiosInstance.post<Blog>("api/data/blogs", data);
+      setBlogs((prev) => [...prev, response.data]);
+      return response.data;
+    } catch (error: any) {
+      throw new Error(error.message || "Failed to create blog");
+    }
+  }
+
   useEffect(() => {
     fetchBlogs();
   }, []);
 
-  return { blogs, loading, error };
+  return { blogs, loading, error, createBlog };
 }
