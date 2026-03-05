@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "beras premium 5kg",
+    "image": "https://picsum.photos/seed/beras/400/300",
+    "description": "beras putih kualitas premium, pulen dan cocok untuk konsumsi harian",
+    "category": "sembako",
+    "stock": 50,
+    "created_at": "2026-02-19T08:00:00Z",
+    "updated_at": "2026-02-19T08:00:00Z",
+    "deleted_at": null
+  },
+  {
+    "id": 2,
+    "title": "minyak goreng 1 liter",
+    "image": "https://picsum.photos/seed/minyak/400/300",
+    "description": "minyak goreng sawit jernih untuk menggoreng dan memasak",
+    "category": "sembako",
+    "stock": 75,
+    "created_at": "2026-02-19T08:00:00Z",
+    "updated_at": "2026-02-19T08:00:00Z",
+    "deleted_at": null
+  },
+  {
+    "id": 3,
+    "title": "gula pasir 1kg",
+    "image": "https://picsum.photos/seed/gula/400/300",
+    "description": "gula pasir putih bersih untuk minuman dan masakan",
+    "category": "sembako",
+    "stock": 60,
+    "created_at": "2026-02-19T08:00:00Z",
+    "updated_at": "2026-02-19T08:00:00Z",
+    "deleted_at": null
+  },
+  {
+    "id": 4,
+    "title": "telur ayam negeri 1kg",
+    "image": "https://picsum.photos/seed/telur/400/300",
+    "description": "telur ayam segar dengan kualitas terjamin",
+    "category": "sembako",
+    "stock": 40,
+    "created_at": "2026-02-19T08:00:00Z",
+    "updated_at": "2026-02-19T08:00:00Z",
+    "deleted_at": null
+  },
+  {
+    "id": 5,
+    "title": "tepung terigu 1kg",
+    "image": "https://picsum.photos/seed/tepung/400/300",
+    "description": "tepung terigu serbaguna untuk kebutuhan baking dan memasak",
+    "category": "sembako",
+    "stock": 55,
+    "created_at": "2026-02-19T08:00:00Z",
+    "updated_at": "2026-02-19T08:00:00Z",
+    "deleted_at": null
+  },
+  {
+    "id": 6,
+    "title": "Clear Anti-Dandruff Shampoo",
+    "image": "https://picsum.photos/400/400?random=21",
+    "description": "Anti-dandruff shampoo with cooling menthol that helps remove dandruff and keeps hair fresh and clean all day.",
+    "category": "personal care",
+    "stock": 120,
+    "created_at": "2/19/2026, 8:32:24 PM",
+    "updated_at": "2/19/2026, 8:32:24 PM",
+    "deleted_at": null
+  }
+]
