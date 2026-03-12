@@ -6,7 +6,7 @@ const PORT: number = 5000;
 app.use(express.json());
 
 app.get("/", (_: Request, res: Response) => {
-  res.send("PeoplePulse API running");
+  res.send("Warehouse API running");
 });
 
 app.listen(PORT, () => {
