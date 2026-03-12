@@ -1,14 +1,31 @@
-import express, { Application, Request, Response } from "express";
+import { Application } from "express";
+import { prisma } from "./config/prisma";
+import express from "express";
 
+import { productRouter } from "./routers/product.route";
+import { errorMiddleware } from "./middlewares/error.middleware";
+
+const PORT = 5000;
 const app: Application = express();
-const PORT: number = 5000;
 
-app.use(express.json());
+async function startServer() {
+  try {
+    await prisma.$connect();
+    console.log("✅ Database connected");
 
-app.get("/", (_: Request, res: Response) => {
-  res.send("Warehouse API running");
-});
+    app.use("/api/products", productRouter);
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+    // error middleware harus ditaruh di paling dibawah setelah semua fitur
+    app.use(errorMiddleware);
+
+    app.listen(PORT, () => {
+      console.log("Server running on port: " + PORT);
+    });
+  } catch (error) {
+    console.error("Failed to connect database");
+    console.error(error);
+    process.exit(1);
+  }
+}
+
+startServer();
